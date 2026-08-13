@@ -238,7 +238,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero-title {
   font-family: var(--font-display); font-weight: 700; letter-spacing: -0.035em;
-  font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.04; margin-bottom: 28px;
+  font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.04; margin-bottom: 24px;
 }
 .grad-text {
   background: linear-gradient(120deg, var(--accent) 20%, var(--accent-2) 100%);
@@ -247,11 +247,11 @@ a { color: inherit; text-decoration: none; }
 
 .hero-sub {
   font-size: clamp(1.05rem, 1.6vw, 1.2rem); line-height: 1.6; letter-spacing: -0.006em;
-  color: var(--text-dim); max-width: 620px; margin: 0 auto 38px;
+  color: var(--text-dim); max-width: 620px; margin: 0 auto 32px;
 }
 .hero-sub strong { color: var(--text); font-weight: 600; }
 
-.hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 68px; }
+.hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -355,7 +355,7 @@ a { color: inherit; text-decoration: none; }
 /* =========================================================
    Sections
    ========================================================= */
-.section { position: relative; z-index: 1; padding: 110px 24px; }
+.section { position: relative; z-index: 1; padding: 84px 24px; }
 .section-inner { max-width: var(--container); margin: 0 auto; }
 
 .section-kicker {
@@ -364,7 +364,7 @@ a { color: inherit; text-decoration: none; }
 }
 .section-title {
   font-family: var(--font-display); font-weight: 700; letter-spacing: -0.025em;
-  font-size: clamp(1.75rem, 3.6vw, 2.65rem); line-height: 1.1; margin-bottom: 52px; max-width: 700px;
+  font-size: clamp(1.75rem, 3.6vw, 2.65rem); line-height: 1.1; margin-bottom: 40px; max-width: 700px;
 }
 
 /* ===== About ===== */
@@ -393,7 +393,7 @@ a { color: inherit; text-decoration: none; }
   content: ''; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px;
   background: linear-gradient(var(--border-strong), var(--border));
 }
-.tl-item { position: relative; margin-bottom: 56px; }
+.tl-item { position: relative; margin-bottom: 42px; }
 .tl-item:last-child { margin-bottom: 0; }
 .tl-marker {
   position: absolute; left: -32px; top: 6px; width: 11px; height: 11px; border-radius: 50%;
@@ -436,7 +436,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent);
   background: var(--accent-soft); padding: 6px 12px; border-radius: 999px;
 }
-.case-intro { margin-top: -30px; margin-bottom: 56px; }
+.case-intro { margin-top: -22px; margin-bottom: 40px; }
 
 /* ===== Case studies — scroll-driven build =====
    Desktop: sticky diagram on the left, steps scroll past on the right;
@@ -445,9 +445,9 @@ a { color: inherit; text-decoration: none; }
    no scroll-jacking, no sticky, progressive-enhancement only. */
 .case-study {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
-.case-study:last-of-type { margin-bottom: 72px; }
+.case-study:last-of-type { margin-bottom: 56px; }
 
 .case-visual-wrap { position: relative; }
 .case-visual {
@@ -486,8 +486,8 @@ a { color: inherit; text-decoration: none; }
 }
 .case-study.enhanced .case-el.step-active { opacity: 1; transform: translateY(0); }
 
-.case-steps { display: flex; flex-direction: column; gap: 30vh; padding: 4vh 0; }
-.case-study:not(.enhanced) .case-steps { gap: 28px; padding: 0; }
+.case-steps { display: flex; flex-direction: column; gap: 16vh; padding: 2vh 0; }
+.case-study:not(.enhanced) .case-steps { gap: 24px; padding: 0; }
 .case-step {
   max-width: 460px; opacity: 0.4;
   transition: opacity 380ms var(--ease-spring);
@@ -622,7 +622,7 @@ a { color: inherit; text-decoration: none; }
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .mini-grid { grid-template-columns: 1fr; }
-  .section { padding: 80px 20px; }
+  .section { padding: 60px 20px; }
   .timeline { padding-left: 24px; }
   .tl-marker { left: -24px; }
   .edu-card { flex-direction: column; text-align: center; padding: 28px 20px; }

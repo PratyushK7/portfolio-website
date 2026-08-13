@@ -1,19 +1,17 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Theme toggle — data-theme was already set synchronously in <head> (no
-// flash of the wrong theme); this just wires up the switch + keeps it in
-// sync with the OS while the visitor hasn't made an explicit choice.
+// Theme toggle — light by default. data-theme was already set synchronously
+// in <head> (no flash of the wrong theme); this just wires up the switch.
 const themeToggle = document.getElementById('themeToggle');
 const themeMeta = document.querySelector('meta[name="theme-color"]');
-const systemLight = window.matchMedia('(prefers-color-scheme: light)');
 
 const applyTheme = (theme) => {
   document.documentElement.setAttribute('data-theme', theme);
   if (themeMeta) themeMeta.setAttribute('content', theme === 'light' ? '#ffffff' : '#000000');
   if (themeToggle) themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
 };
-applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
@@ -24,14 +22,6 @@ if (themeToggle) {
     } catch (e) {}
   });
 }
-
-systemLight.addEventListener('change', (e) => {
-  let hasExplicitChoice = true;
-  try {
-    hasExplicitChoice = !!localStorage.getItem('theme');
-  } catch (err) {}
-  if (!hasExplicitChoice) applyTheme(e.matches ? 'light' : 'dark');
-});
 
 // Nav scroll state
 const nav = document.getElementById('nav');

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pratyush Kumar — Software Engineer</title>
 <meta name="description" content="Pratyush Kumar — Software Engineer II at Microsoft. Distributed systems, cloud-native services, identity & security, and AI/LLM-based solutions." />
-<meta name="theme-color" content="#000000" />
+<meta name="theme-color" content="#ffffff" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="Pratyush Kumar — Software Engineer" />
@@ -20,8 +20,7 @@
 <script>
   (function () {
     try {
-      var saved = localStorage.getItem('theme');
-      var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      var theme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
       document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#ffffff' : '#000000');
     } catch (e) {}
@@ -88,10 +87,10 @@
         <a href="#contact" class="btn btn-primary">Get in touch</a>
         <a href="assets/Pratyush_Kumar_Resume.pdf" id="resumeBtn" class="btn btn-ghost" download>Download résumé</a>
       </div>
-      <div class="dash-panel reveal" role="group" aria-label="Live engineering metrics">
+      <div class="dash-panel reveal" role="group" aria-label="Career metrics at a glance">
         <div class="dash-head">
-          <span class="dash-live"><span class="dash-live-dot"></span>LIVE</span>
-          <span class="dash-head-title">JobScheduler · production metrics</span>
+          <span class="dash-live"><span class="dash-live-dot"></span>SNAPSHOT</span>
+          <span class="dash-head-title">Career highlights, by the numbers</span>
         </div>
         <div class="dash-grid">
           <div class="dash-tile">
@@ -192,12 +191,12 @@
             </div>
             <p class="tl-org">Microsoft · Hyderabad, India</p>
             <ul class="tl-list">
-              <li>Architected <strong>JobScheduler</strong>, an asynchronous distributed audit-search engine replacing a synchronous PowerShell cmdlet path — <strong>50K+ searches/day</strong> and <strong>10M+ records/day</strong> across 12 regional stamps — via parallel per-shard fan-out, per-tenant concurrency control, and sharded Azure Table / Event Hub storage for M365 solutions (Insider Risk Management, DataInsights).</li>
-              <li>Extended audit search to external customers and ISV apps through the <strong>Microsoft Graph Security API</strong> — now adopted by <strong>200+ external tenants</strong> — with OAuth (app &amp; delegated) authorization, RBAC, and multi-tenant isolation.</li>
+              <li>Architected <strong>JobScheduler</strong>, an asynchronous distributed audit-search engine — <strong>50K+ searches/day</strong> and <strong>10M+ records/day</strong> across 12 regional stamps. <em>(case study below)</em></li>
+              <li>Extended it to customers via the <strong>Microsoft Graph Security API</strong>, now adopted by <strong>200+ external tenants</strong>. <em>(case study below)</em></li>
               <li>Ported core Auditing services from .NET Framework 4.7.2 to <strong>.NET 8</strong>, replacing deprecated dependencies (AppAuthentication → Azure.Identity) and unblocking AKS hosting.</li>
               <li>Led auth modernization from legacy AAD/OWIN to <strong>MISE</strong> — <strong>6 clouds</strong> cut over with <strong>zero auth downtime</strong>, via per-cloud config behind feature-flagged, reversible rollout.</li>
               <li>Replaced secret/certificate credentials with <strong>Azure Managed Identity</strong> across Cosmos DB, Event Hub, Storage, and SQL — eliminating <strong>40+ stored secrets</strong> and a recurring class of credential-expiry incidents.</li>
-              <li>Designed &amp; built <strong>Audit Analytics</strong>, an agentic AI tool (Claude API) turning natural-language questions into live audit-data visualizations via a multi-step pipeline with self-correction loops — presented to <strong>50+ engineering leaders</strong> at HackWeek.</li>
+              <li>Designed &amp; built <strong>Audit Analytics</strong>, an agentic AI tool (Claude API) turning questions into live visualizations — presented to <strong>50+ engineering leaders</strong> at HackWeek. <em>(case study below)</em></li>
             </ul>
             <div class="tl-tags">
               <span>.NET 8</span><span>Azure</span><span>Cosmos DB</span><span>Event Hub</span><span>MISE</span><span>Claude API</span>
@@ -289,7 +288,7 @@
     <div class="section-inner">
       <p class="section-kicker reveal">04 · Highlights</p>
       <h2 class="section-title reveal">Selected work, from problem to result.</h2>
-      <p class="about-text reveal case-intro">Scroll through each build — the diagram assembles itself as the story does.</p>
+      <p class="about-text reveal case-intro">Scroll through each build — the diagram assembles itself as the story does. These are internal Microsoft/Adobe systems, so the code isn't public — happy to walk through the real architecture live.</p>
 
       <!-- CASE STUDY 1 — JobScheduler -->
       <div class="case-study" data-case="jobscheduler">
@@ -309,14 +308,14 @@
                 <text x="280" y="54" class="case-node-sub" text-anchor="middle">legacy · synchronous</text>
               </g>
 
-              <g class="case-el" data-step="2">
+              <g class="case-el" data-step="1">
                 <line x1="280" y1="66" x2="280" y2="98" class="case-edge" marker-end="url(#arw-1)" />
                 <rect x="160" y="100" width="240" height="60" rx="14" class="case-node case-node-primary" />
                 <text x="280" y="126" class="case-node-title case-node-title-accent" text-anchor="middle">JobScheduler</text>
                 <text x="280" y="144" class="case-node-sub" text-anchor="middle">async · distributed engine</text>
               </g>
 
-              <g class="case-el" data-step="3">
+              <g class="case-el" data-step="2">
                 <line x1="220" y1="160" x2="120" y2="200" class="case-edge" marker-end="url(#arw-1)" />
                 <line x1="280" y1="160" x2="280" y2="200" class="case-edge" marker-end="url(#arw-1)" />
                 <line x1="340" y1="160" x2="440" y2="200" class="case-edge" marker-end="url(#arw-1)" />
@@ -334,7 +333,7 @@
                 <text x="280" y="312" class="case-node-sub" text-anchor="middle">sharded storage, per-tenant concurrency</text>
               </g>
 
-              <g class="case-el" data-step="4">
+              <g class="case-el" data-step="3">
                 <rect x="20" y="348" width="168" height="36" rx="18" class="case-badge" />
                 <text x="104" y="371" class="case-badge-text" text-anchor="middle">50K+ searches/day</text>
                 <rect x="198" y="348" width="168" height="36" rx="18" class="case-badge" />
@@ -347,21 +346,16 @@
         </div>
         <div class="case-steps">
           <div class="case-step" data-step="1">
-            <span class="case-step-tag">Problem</span>
-            <h3>A synchronous cmdlet couldn't keep up with audit volume.</h3>
-            <p>Internal M365 tools (Insider Risk Management, DataInsights) leaned on a synchronous PowerShell cmdlet path for audit search — it didn't scale, and every query blocked on the last.</p>
+            <span class="case-step-tag">Problem → Approach</span>
+            <h3>A synchronous cmdlet couldn't keep up — so I rebuilt it as JobScheduler.</h3>
+            <p>Internal M365 tools (Insider Risk Management, DataInsights) leaned on a synchronous PowerShell cmdlet for audit search. I replaced it with a purpose-built asynchronous distributed engine, decoupling query submission from execution.</p>
           </div>
           <div class="case-step" data-step="2">
-            <span class="case-step-tag">Approach</span>
-            <h3>Architected JobScheduler as an async distributed engine.</h3>
-            <p>Replaced the cmdlet path entirely with a purpose-built asynchronous job engine, decoupling query submission from execution.</p>
-          </div>
-          <div class="case-step" data-step="3">
             <span class="case-step-tag">Architecture</span>
             <h3>Parallel per-shard fan-out over sharded storage.</h3>
             <p>Per-tenant concurrency control and parallel fan-out across shards, backed by sharded Azure Table and Event Hub storage.</p>
           </div>
-          <div class="case-step" data-step="4">
+          <div class="case-step" data-step="3">
             <span class="case-step-tag">Result</span>
             <h3>50K+ searches and 10M+ records a day, across 12 stamps.</h3>
             <p>Now the backbone of audit search across 12 regional stamps — and the same engine that later powers the public Graph Security API.</p>
@@ -387,14 +381,14 @@
                 <text x="280" y="54" class="case-node-sub" text-anchor="middle">internal only</text>
               </g>
 
-              <g class="case-el" data-step="2">
+              <g class="case-el" data-step="1">
                 <line x1="280" y1="66" x2="280" y2="98" class="case-edge" marker-end="url(#arw-2)" />
                 <rect x="140" y="100" width="280" height="60" rx="14" class="case-node case-node-primary" />
                 <text x="280" y="126" class="case-node-title case-node-title-accent" text-anchor="middle">Microsoft Graph Security API</text>
                 <text x="280" y="144" class="case-node-sub" text-anchor="middle">public surface, same backend</text>
               </g>
 
-              <g class="case-el" data-step="3">
+              <g class="case-el" data-step="2">
                 <line x1="220" y1="160" x2="150" y2="200" class="case-edge" marker-end="url(#arw-2)" />
                 <line x1="340" y1="160" x2="410" y2="200" class="case-edge" marker-end="url(#arw-2)" />
                 <rect x="70" y="202" width="160" height="42" rx="10" class="case-node case-node-shard" />
@@ -408,7 +402,7 @@
                 <text x="280" y="315" class="case-node-sub" text-anchor="middle">strict boundary per tenant</text>
               </g>
 
-              <g class="case-el" data-step="4">
+              <g class="case-el" data-step="3">
                 <rect x="90" y="348" width="190" height="36" rx="18" class="case-badge" />
                 <text x="185" y="371" class="case-badge-text" text-anchor="middle">200+ external tenants</text>
                 <rect x="292" y="348" width="178" height="36" rx="18" class="case-badge" />
@@ -419,21 +413,16 @@
         </div>
         <div class="case-steps">
           <div class="case-step" data-step="1">
-            <span class="case-step-tag">Problem</span>
-            <h3>The audit-search engine only served internal Microsoft tools.</h3>
-            <p>JobScheduler was fast and reliable — but locked inside Microsoft's own products, unreachable by customers or ISV partners.</p>
+            <span class="case-step-tag">Problem → Approach</span>
+            <h3>JobScheduler was internal-only — so I exposed it through the Graph Security API.</h3>
+            <p>It was fast and reliable, but locked inside Microsoft's own products. Rather than build a parallel system, I surfaced the same backend publicly — no duplicated logic, no drift.</p>
           </div>
           <div class="case-step" data-step="2">
-            <span class="case-step-tag">Approach</span>
-            <h3>Exposed it through the Microsoft Graph Security API.</h3>
-            <p>Rather than building a parallel system, the same backend was surfaced publicly — no duplicated logic, no drift between internal and external behavior.</p>
-          </div>
-          <div class="case-step" data-step="3">
             <span class="case-step-tag">Architecture</span>
             <h3>App &amp; delegated OAuth, behind strict tenant isolation.</h3>
             <p>Full OAuth 2.0 support for both app and delegated auth, with RBAC and multi-tenant isolation so no tenant could ever see another's data.</p>
           </div>
-          <div class="case-step" data-step="4">
+          <div class="case-step" data-step="3">
             <span class="case-step-tag">Result</span>
             <h3>Adopted by 200+ external tenants and ISV apps.</h3>
             <p>The same engine built for internal audit search now powers a public, multi-tenant surface at scale.</p>
@@ -459,7 +448,7 @@
                 <text x="280" y="52" class="case-node-title" text-anchor="middle">in failed sign-ins last week?"</text>
               </g>
 
-              <g class="case-el" data-step="2">
+              <g class="case-el" data-step="1">
                 <line x1="280" y1="66" x2="280" y2="94" class="case-edge" marker-end="url(#arw-3)" />
                 <rect x="30" y="96" width="150" height="46" rx="10" class="case-node case-node-shard" />
                 <text x="105" y="124" class="case-node-title-sm" text-anchor="middle">Intent parsing</text>
@@ -471,7 +460,7 @@
                 <text x="465" y="124" class="case-node-title-sm" text-anchor="middle">Retrieval</text>
               </g>
 
-              <g class="case-el" data-step="3">
+              <g class="case-el" data-step="2">
                 <line x1="465" y1="142" x2="465" y2="170" class="case-edge" marker-end="url(#arw-3)" />
                 <line x1="465" y1="170" x2="290" y2="170" class="case-edge" />
                 <rect x="200" y="172" width="180" height="52" rx="12" class="case-node case-node-primary" />
@@ -481,7 +470,7 @@
                 <text x="70" y="160" class="case-node-sub case-loop-label" text-anchor="middle">self-correction loop</text>
               </g>
 
-              <g class="case-el" data-step="4">
+              <g class="case-el" data-step="3">
                 <rect x="130" y="348" width="170" height="36" rx="18" class="case-badge" />
                 <text x="215" y="371" class="case-badge-text" text-anchor="middle">50+ leaders · HackWeek</text>
                 <rect x="312" y="348" width="120" height="36" rx="18" class="case-badge" />
@@ -492,21 +481,16 @@
         </div>
         <div class="case-steps">
           <div class="case-step" data-step="1">
-            <span class="case-step-tag">Problem</span>
-            <h3>Answering an audit question meant writing a query by hand.</h3>
-            <p>Getting insight out of the audit data meant knowing the schema and hand-writing a query — a wall between the question and the answer.</p>
+            <span class="case-step-tag">Problem → Approach</span>
+            <h3>Answering an audit question meant hand-writing a query — so I built an agentic pipeline.</h3>
+            <p>Getting insight out of audit data required knowing the schema. On the Claude API, natural-language questions now flow through intent parsing, query synthesis, and retrieval automatically.</p>
           </div>
           <div class="case-step" data-step="2">
-            <span class="case-step-tag">Approach</span>
-            <h3>Built an agentic pipeline on the Claude API.</h3>
-            <p>Natural-language questions flow through intent parsing, query synthesis, and retrieval — no schema knowledge required.</p>
-          </div>
-          <div class="case-step" data-step="3">
             <span class="case-step-tag">Architecture</span>
             <h3>Rendering, with a self-correction loop back into the pipeline.</h3>
             <p>Results render as live visualizations; when something looks off, the loop routes back to re-synthesize the query automatically.</p>
           </div>
-          <div class="case-step" data-step="4">
+          <div class="case-step" data-step="3">
             <span class="case-step-tag">Result</span>
             <h3>Presented to 50+ engineering leaders at HackWeek.</h3>
             <p>Audit Analytics turned a manual, schema-bound task into a conversation — demoed live to leadership.</p>
