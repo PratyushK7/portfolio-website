@@ -97,6 +97,16 @@ a { color: inherit; text-decoration: none; }
 }
 .skip-link:focus { left: 16px; top: 16px; }
 
+/* Deliberate keyboard-focus ring — on-brand, not the bare browser default. */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.chip:focus-visible, .nav-cta:focus-visible, .btn:focus-visible, .theme-toggle:focus-visible, .nav-toggle:focus-visible {
+  outline-offset: 2px;
+}
+
 /* ===== Ambient background — one soft, contained glow behind the hero,
    not a full-viewport moving field (Apple §14 avoids full-viewport motion). ===== */
 .hero-glow {
@@ -351,7 +361,7 @@ a { color: inherit; text-decoration: none; }
 /* =========================================================
    Sections
    ========================================================= */
-.section { position: relative; z-index: 1; padding: 84px 24px; }
+.section { position: relative; z-index: 1; padding: 84px 24px; scroll-margin-top: 116px; }
 .section-inner { max-width: var(--container); margin: 0 auto; }
 
 .section-kicker {
