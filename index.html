@@ -3,26 +3,25 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pratyush Kumar — Software Engineer</title>
+<title>Pratyush Kumar — Distributed Systems Engineer</title>
 <meta name="description" content="Pratyush Kumar — Software Engineer II at Microsoft. Distributed systems, cloud-native services, identity & security, and AI/LLM-based solutions." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#0b2b4e" />
 
-<!-- Open Graph -->
-<meta property="og:title" content="Pratyush Kumar — Software Engineer" />
+<meta property="og:title" content="Pratyush Kumar — Distributed Systems Engineer" />
 <meta property="og:description" content="Software Engineer II at Microsoft. Distributed systems, Azure, .NET, and AI/LLM-based solutions." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Pratyush Kumar — Software Engineer" />
+<meta name="twitter:title" content="Pratyush Kumar — Distributed Systems Engineer" />
 <meta name="twitter:description" content="Software Engineer II at Microsoft. Distributed systems, Azure, .NET, and AI/LLM-based solutions." />
 <meta name="twitter:image" content="assets/og-image.png" />
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <script type="application/ld+json">
 {
@@ -34,10 +33,7 @@
   "email": "mailto:work.pratyushkumar@gmail.com",
   "telephone": "+91-95603-86609",
   "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
-  "sameAs": [
-    "https://www.linkedin.com/in/pratyush-kumar-07",
-    "https://github.com/PratyushK7"
-  ],
+  "sameAs": ["https://www.linkedin.com/in/pratyush-kumar-07", "https://github.com/PratyushK7"],
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Netaji Subhas Institute of Technology" },
   "knowsAbout": ["Distributed Systems", "Azure", ".NET", "Kubernetes", "OAuth 2.0", "Microsoft Graph API", "Claude API"]
 }
@@ -45,36 +41,39 @@
 <script>
   (function () {
     try {
-      var theme = localStorage.getItem('theme') || 'light';
+      var theme = localStorage.getItem('theme') || 'dark';
       document.documentElement.setAttribute('data-theme', theme);
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#ffffff' : '#000000');
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#eef3f9' : '#0b2b4e');
     } catch (e) {}
   })();
 </script>
 </head>
 <body>
 
+<div class="grid-paper" aria-hidden="true"></div>
+<div class="reg-mark reg-tl" aria-hidden="true"></div>
+<div class="reg-mark reg-tr" aria-hidden="true"></div>
+<div class="reg-mark reg-bl" aria-hidden="true"></div>
+<div class="reg-mark reg-br" aria-hidden="true"></div>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#top" class="logo">PK<span class="dot">.</span></a>
+    <a href="#top" class="logo-box" aria-label="Pratyush Kumar, home">
+      <span class="logo-mark">P·K</span>
+    </a>
     <div class="nav-controls">
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Highlights</a>
+        <a href="#projects">Work</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle color theme">
-        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="4.5" />
-          <path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7" />
-        </svg>
-        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M20 14.5a8.5 8.5 0 1 1-9.5-13 7 7 0 0 0 9.5 13z" />
-        </svg>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch print mode" title="Cyanotype / Blueline">
+        <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="16" /><rect x="8" y="8" width="8" height="8" fill="currentColor" stroke="none" /></svg>
+        <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="16" /></svg>
       </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -85,317 +84,335 @@
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Highlights</a>
+    <a href="#projects">Work</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="main">
 
-  <!-- HERO -->
+  <!-- HERO / COVER SHEET -->
   <section class="hero" id="top">
-    <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-inner">
-      <p class="eyebrow reveal">Hyderabad, India · Available for select collaborations</p>
-      <h1 class="hero-title reveal">
-        Hi, I'm <span class="grad-text">Pratyush Kumar</span>.<br />
-        I build distributed systems<br class="lg-only" /> that scale.
-      </h1>
-      <p class="hero-sub reveal">
-        Software Engineer II at <strong>Microsoft</strong>, with 4 years architecting large-scale
-        backend systems, cloud-native services, and AI/LLM-powered tools — deep in
-        <strong>Azure</strong> &amp; <strong>.NET</strong>, fluent across C#, C++, Java, Python, and JavaScript.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-primary">Get in touch</a>
-        <a href="assets/Pratyush_Kumar_Resume.pdf" id="resumeBtn" class="btn btn-ghost" download>Download résumé</a>
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="led" aria-hidden="true"></span>AS-BUILT RECORD · HYDERABAD, INDIA · OPEN TO WORK</p>
+        <h1 class="hero-title reveal">PRATYUSH<br />KUMAR</h1>
+        <p class="hero-role reveal">Distributed Systems Engineer</p>
+        <p class="hero-sub reveal">
+          Software Engineer II at <strong>Microsoft</strong> — four years designing distributed
+          backend systems, cloud-native services, and AI-driven tooling. Deep in
+          <strong>Azure</strong> and <strong>.NET</strong>; fluent across C#, C++, Java, Python, and JavaScript.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="assets/Pratyush_Kumar_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+        </div>
+        <div class="spec-strip reveal" role="group" aria-label="Career metrics">
+          <div class="spec-item"><span class="spec-num">4<em>+</em></span><span class="spec-label">Years</span></div>
+          <div class="spec-item"><span class="spec-num">10M<em>+</em></span><span class="spec-label">Records/day</span></div>
+          <div class="spec-item"><span class="spec-num">200<em>+</em></span><span class="spec-label">Tenants</span></div>
+          <div class="spec-item"><span class="spec-num">40<em>+</em></span><span class="spec-label">Secrets retired</span></div>
+        </div>
       </div>
-      <div class="dash-panel reveal" role="group" aria-label="Career metrics at a glance">
-        <div class="dash-head">
-          <span class="dash-live"><span class="dash-live-dot"></span>SNAPSHOT</span>
-          <span class="dash-head-title">Career highlights, by the numbers</span>
-        </div>
-        <div class="dash-grid">
-          <div class="dash-tile">
-            <span class="dash-tile-label">Years in production</span>
-            <div class="dash-tile-value"><span class="stat-num" data-count="4">0</span><span class="stat-suffix">+</span></div>
-            <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
-              <path class="sparkline-path" d="M0,24 L14,22 L28,23 L42,17 L56,19 L70,12 L84,14 L100,6" />
-            </svg>
-          </div>
-          <div class="dash-tile">
-            <span class="dash-tile-label">Records / day</span>
-            <div class="dash-tile-value"><span class="stat-num" data-count="10">0</span><span class="stat-suffix">M+</span></div>
-            <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
-              <path class="sparkline-path" d="M0,26 L14,20 L28,22 L42,14 L56,16 L70,9 L84,11 L100,3" />
-            </svg>
-          </div>
-          <div class="dash-tile">
-            <span class="dash-tile-label">External tenants</span>
-            <div class="dash-tile-value"><span class="stat-num" data-count="200">0</span><span class="stat-suffix">+</span></div>
-            <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
-              <path class="sparkline-path" d="M0,25 L14,23 L28,18 L42,19 L56,13 L70,15 L84,8 L100,5" />
-            </svg>
-          </div>
-          <div class="dash-tile">
-            <span class="dash-tile-label">Secrets eliminated</span>
-            <div class="dash-tile-value"><span class="stat-num" data-count="40">0</span><span class="stat-suffix">+</span></div>
-            <svg class="sparkline" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
-              <path class="sparkline-path" d="M0,10 L14,12 L28,9 L42,15 L56,18 L70,20 L84,24 L100,27" />
-            </svg>
-          </div>
-        </div>
-        <div class="dash-stamps">
-          <span class="dash-stamps-label">12 regional stamps · sharded fan-out</span>
-          <div class="dash-stamps-row" aria-hidden="true">
-            <span class="dash-stamp"></span><span class="dash-stamp"></span><span class="dash-stamp"></span>
-            <span class="dash-stamp"></span><span class="dash-stamp"></span><span class="dash-stamp"></span>
-            <span class="dash-stamp"></span><span class="dash-stamp"></span><span class="dash-stamp"></span>
-            <span class="dash-stamp"></span><span class="dash-stamp"></span><span class="dash-stamp"></span>
-          </div>
-        </div>
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 420 460" class="schematic-draw">
+          <g class="draw-line">
+            <circle cx="210" cy="40" r="16" />
+            <line x1="210" y1="56" x2="210" y2="120" />
+            <circle cx="80" cy="180" r="14" />
+            <circle cx="210" cy="180" r="14" />
+            <circle cx="340" cy="180" r="14" />
+            <line x1="210" y1="120" x2="80" y2="166" />
+            <line x1="210" y1="120" x2="210" y2="166" />
+            <line x1="210" y1="120" x2="340" y2="166" />
+            <line x1="80" y1="194" x2="80" y2="260" />
+            <line x1="210" y1="194" x2="210" y2="260" />
+            <line x1="340" y1="194" x2="340" y2="260" />
+            <rect x="40" y="260" width="340" height="46" />
+            <line x1="210" y1="306" x2="210" y2="360" />
+            <circle cx="210" cy="384" r="18" />
+            <line x1="150" y1="384" x2="270" y2="384" stroke-dasharray="4 4" />
+          </g>
+        </svg>
       </div>
     </div>
-    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="section-inner">
-      <p class="section-kicker reveal">01 · About</p>
-      <h2 class="section-title reveal">Full-lifecycle engineer, systems-first thinker.</h2>
-      <p class="about-text reveal">
-        I'm a Software Engineer II with four years building large-scale distributed backend
-        systems and cloud-native services. I work across the full engineering lifecycle —
-        system design, scalable APIs, distributed data processing, identity &amp; security,
-        cloud modernization, and AI/LLM-based solutions — with deep expertise in
-        <strong>Azure</strong> and <strong>.NET</strong>. Hands-on across
-        <strong>C#, C++, Java, Python,</strong> and <strong>JavaScript</strong>.
+  <!-- SHEET 01 — SPECIFICATION -->
+  <section class="sheet" id="about">
+    <div class="sheet-inner">
+      <div class="sheet-head reveal">
+        <p class="sheet-kicker">Sheet 01 — Specification</p>
+        <h2 class="sheet-title">Built for scale, specified for reliability.</h2>
+      </div>
+      <p class="sheet-lead reveal">
+        Software Engineer II with four years building large-scale distributed backend systems
+        and cloud-native services — system design, scalable APIs, distributed data processing,
+        identity &amp; security, cloud modernization, and AI/LLM-based solutions.
       </p>
-      <div class="about-grid reveal">
-        <div class="about-card">
-          <div class="about-card-icon" aria-hidden="true">🧭</div>
+      <div class="spec-grid reveal">
+        <div class="spec-card">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="5" r="2.2" /><circle cx="5" cy="18" r="2.2" /><circle cx="12" cy="18" r="2.2" /><circle cx="19" cy="18" r="2.2" /><path d="M12 7.2V12M12 12L5 15.8M12 12v3.8M12 12l7 3.8" /></svg>
+          <span class="spec-code">SYS-01</span>
           <h3>System Design</h3>
-          <p>Sharded, multi-region architectures built for scale — from per-tenant concurrency control to fan-out job scheduling.</p>
+          <p>Sharded, multi-region architectures — per-tenant concurrency control, fan-out job scheduling.</p>
         </div>
-        <div class="about-card">
-          <div class="about-card-icon" aria-hidden="true">🔐</div>
+        <div class="spec-card">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" /><path d="M9 12l2 2 4-4" /></svg>
+          <span class="spec-code">SYS-02</span>
           <h3>Identity &amp; Security</h3>
-          <p>OAuth 2.0/OIDC, RBAC, and managed-identity migrations that eliminate secrets and cut credential-expiry incidents.</p>
+          <p>OAuth 2.0/OIDC, RBAC, and managed-identity migrations that eliminate secrets.</p>
         </div>
-        <div class="about-card">
-          <div class="about-card-icon" aria-hidden="true">☁️</div>
+        <div class="spec-card">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17a4 4 0 0 1-1-7.9A5 5 0 0 1 15.9 8 4.5 4.5 0 0 1 17 17H7z" /><path d="M12 12v6M9.5 15.5L12 18l2.5-2.5" /></svg>
+          <span class="spec-code">SYS-03</span>
           <h3>Cloud Modernization</h3>
-          <p>.NET Framework → .NET 8 migrations, legacy auth cutovers, and AKS-ready services with zero downtime.</p>
+          <p>.NET Framework → .NET 8 migrations, legacy auth cutovers, AKS-ready, zero downtime.</p>
         </div>
-        <div class="about-card">
-          <div class="about-card-icon" aria-hidden="true">🤖</div>
+        <div class="spec-card">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="7" r="2" /><circle cx="18" cy="7" r="2" /><circle cx="12" cy="18" r="2" /><path d="M7.6 8.3L11 16M16.4 8.3L13 16" /><path d="M12 18a7 7 0 0 0-6-9.5" stroke-dasharray="2.5 2.5" /></svg>
+          <span class="spec-code">SYS-04</span>
           <h3>AI &amp; Agentic Pipelines</h3>
-          <p>LLM-powered tools with multi-step pipelines — intent parsing, retrieval, and self-correction loops on the Claude API.</p>
+          <p>Multi-step pipelines — intent parsing, retrieval, self-correction loops on the Claude API.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="section-inner">
-      <p class="section-kicker reveal">02 · Experience</p>
-      <h2 class="section-title reveal">Where I've built things.</h2>
+  <!-- SHEET 02 — REVISION HISTORY -->
+  <section class="sheet" id="experience">
+    <div class="sheet-inner">
+      <div class="sheet-head reveal">
+        <p class="sheet-kicker">Sheet 02 — Revision History</p>
+        <h2 class="sheet-title">Three revisions, shipped in production.</h2>
+      </div>
 
-      <div class="timeline">
+      <div class="rev-table reveal">
+        <div class="rev-table-head">
+          <span>Rev</span><span>Date</span><span>Role</span><span class="rev-col-desc">Description</span>
+        </div>
 
-        <article class="tl-item reveal">
-          <div class="tl-marker" aria-hidden="true"></div>
-          <div class="tl-content">
-            <div class="tl-head">
-              <h3>Software Engineer II</h3>
-              <span class="tl-date">05/2025 – Present</span>
-            </div>
-            <p class="tl-org">Microsoft · Hyderabad, India</p>
-            <ul class="tl-list">
-              <li>Architected <strong>JobScheduler</strong>, an asynchronous distributed audit-search engine — <strong>50K+ searches/day</strong> and <strong>10M+ records/day</strong> across 12 regional stamps.</li>
-              <li>Extended it to customers via the <strong>Microsoft Graph Security API</strong>, now adopted by <strong>200+ external tenants</strong>.</li>
-              <li>Ported core Auditing services from .NET Framework 4.7.2 to <strong>.NET 8</strong>, replacing deprecated dependencies (AppAuthentication → Azure.Identity) and unblocking AKS hosting.</li>
-              <li>Led auth modernization from legacy AAD/OWIN to <strong>MISE</strong> — <strong>6 clouds</strong> cut over with <strong>zero auth downtime</strong>, via per-cloud config behind feature-flagged, reversible rollout.</li>
-              <li>Replaced secret/certificate credentials with <strong>Azure Managed Identity</strong> across Cosmos DB, Event Hub, Storage, and SQL — eliminating <strong>40+ stored secrets</strong> and a recurring class of credential-expiry incidents.</li>
-              <li>Designed &amp; built <strong>Audit Analytics</strong>, an agentic AI tool (Claude API) turning questions into live visualizations — presented to <strong>50+ engineering leaders</strong> at HackWeek.</li>
+        <article class="rev-row">
+          <span class="rev-tag">C</span>
+          <span class="rev-date">05/2025 —<br />Present</span>
+          <div class="rev-role">
+            <h3>Software Engineer II</h3>
+            <p class="rev-org">Microsoft · Hyderabad, India</p>
+          </div>
+          <div class="rev-desc">
+            <ul>
+              <li>Architected <strong>JobScheduler</strong>, an async distributed audit-search engine — <strong>50K+ searches/day</strong>, <strong>10M+ records/day</strong> across 12 regional stamps.</li>
+              <li>Extended it via the <strong>Microsoft Graph Security API</strong>, adopted by <strong>200+ external tenants</strong>.</li>
+              <li>Ported core Auditing services from .NET Framework 4.7.2 to <strong>.NET 8</strong>, unblocking AKS hosting.</li>
+              <li>Led auth modernization to <strong>MISE</strong> — <strong>6 clouds</strong>, <strong>zero downtime</strong>.</li>
+              <li>Replaced credentials with <strong>Azure Managed Identity</strong> — <strong>40+ secrets</strong> eliminated.</li>
+              <li>Built <strong>Audit Analytics</strong>, an agentic AI tool (Claude API) — presented to <strong>50+ leaders</strong> at HackWeek.</li>
             </ul>
-            <div class="tl-tags">
-              <span>.NET 8</span><span>Azure</span><span>Cosmos DB</span><span>Event Hub</span><span>MISE</span><span>Claude API</span>
-            </div>
           </div>
         </article>
 
-        <article class="tl-item reveal">
-          <div class="tl-marker" aria-hidden="true"></div>
-          <div class="tl-content">
-            <div class="tl-head">
-              <h3>Member of Technical Staff II</h3>
-              <span class="tl-date">07/2024 – 05/2025</span>
-            </div>
-            <p class="tl-org">Adobe · Noida, India</p>
-            <ul class="tl-list">
-              <li>Spearheaded an in-app task orchestration framework for B2B Acrobat users using service workers and local caching — <strong>45% increase</strong> in task completion on a flow tied to <strong>$500K+</strong> in annual team revenue.</li>
-              <li>Redesigned the A/B experimentation platform into microservices on Docker and Kubernetes, contributing to <strong>$200K+</strong> in annual infrastructure savings and improved scalability.</li>
-              <li>Drove Individual-to-Teams (I2T) conversion and SMB user detection in Acrobat Reader, streamlining team onboarding and lifting collaboration-conversion rates.</li>
+        <article class="rev-row">
+          <span class="rev-tag">B</span>
+          <span class="rev-date">07/2024 —<br />05/2025</span>
+          <div class="rev-role">
+            <h3>Member of Technical Staff II</h3>
+            <p class="rev-org">Adobe · Noida, India</p>
+          </div>
+          <div class="rev-desc">
+            <ul>
+              <li>Task orchestration framework for B2B Acrobat users — <strong>45% increase</strong> in completion on a flow tied to <strong>$500K+</strong> in annual revenue.</li>
+              <li>Redesigned the A/B platform into microservices on Docker/Kubernetes — <strong>$200K+</strong> in annual savings.</li>
+              <li>Drove Individual-to-Teams conversion and SMB detection in Acrobat Reader.</li>
             </ul>
-            <div class="tl-tags">
-              <span>Docker</span><span>Kubernetes</span><span>Microservices</span><span>Service Workers</span>
-            </div>
           </div>
         </article>
 
-        <article class="tl-item reveal">
-          <div class="tl-marker" aria-hidden="true"></div>
-          <div class="tl-content">
-            <div class="tl-head">
-              <h3>Member of Technical Staff</h3>
-              <span class="tl-date">07/2022 – 07/2024</span>
-            </div>
-            <p class="tl-org">Adobe · Noida, India</p>
-            <ul class="tl-list">
-              <li>Migrated legacy C++-based UI components to <strong>ReactJS</strong>, removing <strong>20K+ lines</strong> of legacy code and cutting feature-delivery time by <strong>~40%</strong>.</li>
-              <li>Established unit and integration testing with Jest and React Testing Library, raising coverage above <strong>85%</strong> and reducing production regressions.</li>
+        <article class="rev-row">
+          <span class="rev-tag">A</span>
+          <span class="rev-date">07/2022 —<br />07/2024</span>
+          <div class="rev-role">
+            <h3>Member of Technical Staff</h3>
+            <p class="rev-org">Adobe · Noida, India</p>
+          </div>
+          <div class="rev-desc">
+            <ul>
+              <li>Migrated legacy C++ UI to <strong>ReactJS</strong> — <strong>20K+ lines</strong> removed, delivery time cut <strong>~40%</strong>.</li>
+              <li>Established Jest/RTL testing — coverage above <strong>85%</strong>.</li>
             </ul>
-            <div class="tl-tags">
-              <span>ReactJS</span><span>C++</span><span>Jest</span><span>Testing</span>
-            </div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="section-inner">
-      <p class="section-kicker reveal">03 · Skills</p>
-      <h2 class="section-title reveal">Tools of the trade.</h2>
-      <div class="skills-groups reveal">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <div class="chip-row">
-            <span class="chip">C#</span><span class="chip">C++</span><span class="chip">Java</span>
-            <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">SQL</span>
-          </div>
+  <!-- SHEET 03 — BILL OF MATERIALS -->
+  <section class="sheet" id="skills">
+    <div class="sheet-inner">
+      <div class="sheet-head reveal">
+        <p class="sheet-kicker">Sheet 03 — Bill of Materials</p>
+        <h2 class="sheet-title">Parts list.</h2>
+      </div>
+      <div class="bom reveal">
+        <div class="bom-group">
+          <p class="bom-cat">Languages</p>
+          <ul class="bom-list">
+            <li><span class="bom-code">L-01</span>C#</li>
+            <li><span class="bom-code">L-02</span>C++</li>
+            <li><span class="bom-code">L-03</span>Java</li>
+            <li><span class="bom-code">L-04</span>Python</li>
+            <li><span class="bom-code">L-05</span>JavaScript</li>
+            <li><span class="bom-code">L-06</span>SQL</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Platforms &amp; Cloud</h3>
-          <div class="chip-row">
-            <span class="chip">Azure</span><span class="chip">Kubernetes</span><span class="chip">Cosmos DB</span>
-            <span class="chip">Event Hub</span><span class="chip">.NET 8</span><span class="chip">Node.js</span>
-          </div>
+        <div class="bom-group">
+          <p class="bom-cat">Platforms &amp; Cloud</p>
+          <ul class="bom-list">
+            <li><span class="bom-code">P-01</span>Azure</li>
+            <li><span class="bom-code">P-02</span>Kubernetes</li>
+            <li><span class="bom-code">P-03</span>Cosmos DB</li>
+            <li><span class="bom-code">P-04</span>Event Hub</li>
+            <li><span class="bom-code">P-05</span>.NET 8</li>
+            <li><span class="bom-code">P-06</span>Node.js</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Identity &amp; Security</h3>
-          <div class="chip-row">
-            <span class="chip">Microsoft Graph</span><span class="chip">OAuth 2.0 / OIDC</span>
-            <span class="chip">MISE</span><span class="chip">Managed Identity</span>
-          </div>
+        <div class="bom-group">
+          <p class="bom-cat">Identity &amp; Security</p>
+          <ul class="bom-list">
+            <li><span class="bom-code">S-01</span>Microsoft Graph</li>
+            <li><span class="bom-code">S-02</span>OAuth 2.0 / OIDC</li>
+            <li><span class="bom-code">S-03</span>MISE</li>
+            <li><span class="bom-code">S-04</span>Managed Identity</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Frontend &amp; AI</h3>
-          <div class="chip-row">
-            <span class="chip">ReactJS</span><span class="chip">Distributed Systems</span>
-            <span class="chip">Claude API</span><span class="chip">LLM &amp; Agentic Pipelines</span>
-          </div>
+        <div class="bom-group">
+          <p class="bom-cat">Frontend &amp; AI</p>
+          <ul class="bom-list">
+            <li><span class="bom-code">F-01</span>ReactJS</li>
+            <li><span class="bom-code">F-02</span>Distributed Systems</li>
+            <li><span class="bom-code">F-03</span>Claude API</li>
+            <li><span class="bom-code">F-04</span>Agentic Pipelines</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HIGHLIGHTS -->
-  <section class="section" id="projects">
-    <div class="section-inner">
-      <p class="section-kicker reveal">04 · Highlights</p>
-      <h2 class="section-title reveal">Selected work.</h2>
-      <div class="mini-grid reveal">
-        <article class="mini-card">
+  <!-- SHEET 04 — DETAIL DRAWINGS -->
+  <section class="sheet" id="projects">
+    <div class="sheet-inner">
+      <div class="sheet-head reveal">
+        <p class="sheet-kicker">Sheet 04 — Detail Drawings</p>
+        <h2 class="sheet-title">Selected work, in detail.</h2>
+      </div>
+
+      <div class="fig-featured reveal">
+        <div class="fig-diagram">
+          <span class="fig-label">FIG. 01</span>
+          <svg viewBox="0 0 460 300" class="fig-svg" role="img" aria-label="JobScheduler: legacy PowerShell cmdlet replaced by an async engine fanning out to three shards over Azure Table and Event Hub storage.">
+            <defs>
+              <marker id="fig1-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+              </marker>
+            </defs>
+            <g class="fig-ink">
+              <rect x="150" y="10" width="160" height="36" stroke-dasharray="3 3" />
+              <text x="230" y="32" text-anchor="middle" class="fig-text">PowerShell cmdlet</text>
+              <line x1="230" y1="46" x2="230" y2="70" marker-end="url(#fig1-arrow)" />
+              <rect x="140" y="70" width="180" height="40" class="fig-primary" />
+              <text x="230" y="94" text-anchor="middle" class="fig-text fig-text-strong">JobScheduler</text>
+              <line x1="180" y1="110" x2="90" y2="140" marker-end="url(#fig1-arrow)" />
+              <line x1="230" y1="110" x2="230" y2="140" marker-end="url(#fig1-arrow)" />
+              <line x1="280" y1="110" x2="370" y2="140" marker-end="url(#fig1-arrow)" />
+              <rect x="50" y="140" width="80" height="30" /><text x="90" y="160" text-anchor="middle" class="fig-text-sm">Shard A</text>
+              <rect x="190" y="140" width="80" height="30" /><text x="230" y="160" text-anchor="middle" class="fig-text-sm">Shard B</text>
+              <rect x="330" y="140" width="80" height="30" /><text x="370" y="160" text-anchor="middle" class="fig-text-sm">Shard C</text>
+              <line x1="90" y1="170" x2="90" y2="195" /><line x1="230" y1="170" x2="230" y2="195" /><line x1="370" y1="170" x2="370" y2="195" />
+              <rect x="35" y="195" width="390" height="34" /><text x="230" y="216" text-anchor="middle" class="fig-text-sm">Azure Table · Event Hub</text>
+              <g class="fig-dim">
+                <line x1="35" y1="245" x2="425" y2="245" />
+                <line x1="35" y1="240" x2="35" y2="250" /><line x1="425" y1="240" x2="425" y2="250" />
+                <text x="230" y="262" text-anchor="middle" class="fig-text-sm">50K+ searches/day · 10M+ records/day · 12 regional stamps</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="fig-caption">
           <span class="project-tag">Distributed Systems</span>
           <h3>JobScheduler</h3>
-          <p>Async, sharded audit-search engine handling 50K+ searches and 10M+ records daily across 12 regional stamps — replaced a legacy synchronous PowerShell path.</p>
-        </article>
-        <article class="mini-card">
+          <p>Async, sharded audit-search engine — replaced a legacy synchronous PowerShell path for internal M365 products.</p>
+        </div>
+      </div>
+
+      <div class="fig-grid reveal">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 02</span>
           <span class="project-tag">Public API</span>
           <h3>Graph Security API Integration</h3>
           <p>Exposed the audit-search backend to 200+ external tenants and ISV apps via OAuth (app &amp; delegated), RBAC, and strict multi-tenant isolation.</p>
         </article>
-        <article class="mini-card">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 03</span>
           <span class="project-tag">AI / Agentic</span>
           <h3>Audit Analytics</h3>
-          <p>Agentic AI tool on the Claude API turning natural-language questions into live visualizations, with a self-correction loop — presented to 50+ leaders at HackWeek.</p>
+          <p>Agentic AI tool on the Claude API turning natural-language questions into live visualizations, with a self-correction loop.</p>
         </article>
-        <article class="mini-card">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 04</span>
           <span class="project-tag">Modernization</span>
           <h3>Zero-Downtime Auth Cutover</h3>
           <p>Migrated from legacy AAD/OWIN to MISE across 6 clouds — commercial and government — with zero auth downtime.</p>
         </article>
-        <article class="mini-card">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 05</span>
           <span class="project-tag">Product</span>
           <h3>In-App Task Orchestration</h3>
-          <p>Service-worker-driven task framework for B2B Acrobat users — 45% increase in task completion on a flow tied to $500K+ in annual revenue.</p>
+          <p>Service-worker-driven task framework for B2B Acrobat users — 45% increase in task completion.</p>
         </article>
-        <article class="mini-card">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 06</span>
           <span class="project-tag">Platform</span>
           <h3>A/B Platform → Microservices</h3>
-          <p>Redesigned Adobe's A/B experimentation platform onto Docker and Kubernetes — $200K+ in annual infrastructure savings.</p>
+          <p>Redesigned Adobe's A/B experimentation platform onto Docker and Kubernetes — $200K+ in annual savings.</p>
         </article>
-        <article class="mini-card">
+        <article class="fig-card">
+          <span class="fig-label">FIG. 07</span>
           <span class="project-tag">Migration</span>
           <h3>C++ UI → ReactJS</h3>
-          <p>Migrated legacy C++ UI components to ReactJS, removing 20K+ lines of legacy code and cutting feature-delivery time by ~40%.</p>
+          <p>Migrated legacy C++ UI components to ReactJS, cutting feature-delivery time by ~40%.</p>
         </article>
       </div>
-      <p class="about-text reveal case-intro">These are internal Microsoft/Adobe systems, so the code isn't public — happy to walk through the architecture live.</p>
+      <p class="sheet-note reveal">Note — internal Microsoft/Adobe systems; code isn't public. Happy to walk through the architecture live.</p>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="section-inner">
-      <p class="section-kicker reveal">05 · Contact</p>
-      <h2 class="section-title reveal">Let's build something.</h2>
-      <p class="about-text reveal">
-        Open to interesting conversations — system design, distributed infra, or AI-driven tooling.
-        Reach out any time.
-      </p>
-      <div class="contact-grid reveal">
-        <a class="contact-card" href="mailto:work.pratyushkumar@gmail.com">
-          <span class="contact-icon" aria-hidden="true">✉️</span>
-          <span class="contact-label">Email</span>
-          <span class="contact-value">work.pratyushkumar@gmail.com</span>
-        </a>
-        <a class="contact-card" href="tel:+919560386609">
-          <span class="contact-icon" aria-hidden="true">📞</span>
-          <span class="contact-label">Phone</span>
-          <span class="contact-value">+91 95603 86609</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/pratyush-kumar-07" target="_blank" rel="noopener">
-          <span class="contact-icon" aria-hidden="true">💼</span>
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">/in/pratyush-kumar-07</span>
-        </a>
-        <a class="contact-card" href="https://github.com/PratyushK7" target="_blank" rel="noopener">
-          <span class="contact-icon" aria-hidden="true">🐙</span>
-          <span class="contact-label">GitHub</span>
-          <span class="contact-value">@PratyushK7</span>
-        </a>
+  <!-- SHEET 05 — TITLE BLOCK -->
+  <section class="sheet title-sheet" id="contact">
+    <div class="sheet-inner">
+      <div class="sheet-head reveal">
+        <p class="sheet-kicker">Sheet 05 — Title Block</p>
+        <h2 class="sheet-title">Let's build something.</h2>
       </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <div class="section-inner">
-      <p class="section-kicker reveal">06 · Education</p>
-      <div class="edu-card reveal">
-        <div class="edu-card-icon" aria-hidden="true">🎓</div>
-        <div class="edu-card-body">
-          <h3>Netaji Subhas Institute of Technology</h3>
-          <p>BE in Information Technology · GPA 8.02/10.0</p>
-          <span class="edu-date">07/2018 – 05/2022</span>
+      <div class="title-block reveal">
+        <div class="stamp" aria-hidden="true">OPEN<br />TO WORK</div>
+        <div class="tb-row">
+          <div class="tb-cell"><span class="tb-label">Drawn by</span><span class="tb-value">Pratyush Kumar</span></div>
+          <div class="tb-cell"><span class="tb-label">Discipline</span><span class="tb-value">Distributed Systems</span></div>
+        </div>
+        <div class="tb-row">
+          <div class="tb-cell"><span class="tb-label">Email</span><a class="tb-value tb-link" href="mailto:work.pratyushkumar@gmail.com">work.pratyushkumar@gmail.com</a></div>
+          <div class="tb-cell"><span class="tb-label">Phone</span><a class="tb-value tb-link" href="tel:+919560386609">+91 95603 86609</a></div>
+        </div>
+        <div class="tb-row">
+          <div class="tb-cell"><span class="tb-label">LinkedIn</span><a class="tb-value tb-link" href="https://www.linkedin.com/in/pratyush-kumar-07" target="_blank" rel="noopener">/in/pratyush-kumar-07</a></div>
+          <div class="tb-cell"><span class="tb-label">GitHub</span><a class="tb-value tb-link" href="https://github.com/PratyushK7" target="_blank" rel="noopener">@PratyushK7</a></div>
+        </div>
+        <div class="tb-row">
+          <div class="tb-cell tb-cell-wide"><span class="tb-label">Source document (Education)</span><span class="tb-value">Netaji Subhas Institute of Technology — BE, Information Technology · GPA 8.02/10.0 · 2018–2022</span></div>
+        </div>
+        <div class="tb-row tb-row-foot">
+          <div class="tb-cell"><span class="tb-label">Scale</span><span class="tb-value">1:1</span></div>
+          <div class="tb-cell"><span class="tb-label">Sheet</span><span class="tb-value">05 of 05</span></div>
         </div>
       </div>
     </div>
@@ -405,8 +422,8 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <p>© <span id="year"></span> Pratyush Kumar. Built with care, deployed on Vercel.</p>
-    <a href="#top" class="back-top">Back to top ↑</a>
+    <p>© <span id="year"></span> Pratyush Kumar — end of drawing set.</p>
+    <a href="#top" class="back-top">Back to cover ↑</a>
   </div>
 </footer>
 

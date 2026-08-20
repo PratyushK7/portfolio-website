@@ -1,17 +1,17 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Theme toggle — light by default. data-theme was already set synchronously
-// in <head> (no flash of the wrong theme); this just wires up the switch.
+// Theme toggle — cyanotype (dark) by default, the signature look.
+// data-theme was already set synchronously in <head> to avoid a flash.
 const themeToggle = document.getElementById('themeToggle');
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 
 const applyTheme = (theme) => {
   document.documentElement.setAttribute('data-theme', theme);
-  if (themeMeta) themeMeta.setAttribute('content', theme === 'light' ? '#ffffff' : '#000000');
-  if (themeToggle) themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+  if (themeMeta) themeMeta.setAttribute('content', theme === 'light' ? '#eef3f9' : '#0b2b4e');
+  if (themeToggle) themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to cyanotype' : 'Switch to blueline');
 };
-applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
@@ -56,36 +56,6 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
 );
 revealEls.forEach((el) => revealObserver.observe(el));
-
-// Animated stat counters
-const statEls = document.querySelectorAll('.stat-num');
-const animateCount = (el) => {
-  const target = parseInt(el.dataset.count, 10);
-  const duration = 1400;
-  const start = performance.now();
-  const step = (now) => {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.round(eased * target);
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-};
-const statObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateCount(entry.target);
-        statObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
-statEls.forEach((el) => statObserver.observe(el));
-
-// Dashboard hero's sparklines/stamp-grid key off .dash-panel.in-view, which
-// the reveal observer above already sets (the panel also carries .reveal).
